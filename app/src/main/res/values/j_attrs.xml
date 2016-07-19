@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SyllabearEditText">
+        <attr name="hint" format="string" />
+        <attr name="maxLength" format="integer" />
+        <attr name="txtSize" format="dimension" />
+        <attr name="isStronger" format="boolean" />
+        <attr name="phoneBlank" format="boolean" />
+        <attr name="inputType" >
+            <enum name="text"  value="0"/>
+            <enum name="phone"  value="1"/>
+            <enum name="textPassword"  value="2"/>
+            <enum name="number"  value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TailsTextView">
+        <attr name="leftTextTails" format="string" />
+        <attr name="rightTextTails" format="string" />
+        <attr name="line_through" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TextMoreLayout">
+        <attr name="tmLeftText" format="string" />
+        <attr name="tmRightTextTails" format="string" />
+        <attr name="tmRightImgVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="KindredView">
+        <attr name="leftText" format="string" />
+        <attr name="rightText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="NoDataView">
+        <attr name="NoDataText" format="string" />
+        <attr name="NoDataImg" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadView">
+        <attr name="LoadViewNoDataText" format="string" />
+        <attr name="LoadViewNoDataImg" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="StarsLayout">
+        <attr name="starSpace" format="dimension" />
+        <attr name="bigStar" format="boolean" />
+        <attr name="blingType" >
+            <enum name="normal"  value="0"/>
+            <enum name="score"  value="1"/>
+            <enum name="edit"  value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
