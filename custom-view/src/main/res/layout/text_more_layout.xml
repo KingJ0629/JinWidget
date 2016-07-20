@@ -41,7 +41,7 @@
     </RelativeLayout>
 
     <ImageView
-        style="@style/line_horizontal"
+        style="@style/jin_custom_view_line_horizontal"
         android:layout_alignBottom="@id/layout"/>
 
 </RelativeLayout>

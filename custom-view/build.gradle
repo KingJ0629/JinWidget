@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/kj387948407/JinWidget'
     gitUrl = 'https://github.com/kj387948407/JinWidget.git'
 
-    libraryVersion = '0.99'
+    libraryVersion = '1.0'
 
     developerId = 'jin'
     developerName = 'Jin Feng'
