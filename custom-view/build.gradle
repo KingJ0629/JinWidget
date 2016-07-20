@@ -2,18 +2,18 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'customview'
+    bintrayName = 'custom-view'
 
-    publishedGroupId = 'com.jin'
-    libraryName = 'customview'
-    artifact = 'customview'
+    publishedGroupId = 'com.hangzhou.jin'
+    libraryName = 'JinWidget'
+    artifact = 'custom-view'
 
     libraryDescription = 'A widget from Jin'
 
     siteUrl = 'https://github.com/kj387948407/JinWidget'
     gitUrl = 'https://github.com/kj387948407/JinWidget.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.99'
 
     developerId = 'jin'
     developerName = 'Jin Feng'
