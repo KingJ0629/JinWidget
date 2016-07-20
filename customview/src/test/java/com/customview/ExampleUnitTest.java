@@ -1,4 +1,4 @@
-package com.jinwidget;
+package com.customview;
 
 import org.junit.Test;
 

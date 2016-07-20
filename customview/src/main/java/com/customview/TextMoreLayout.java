@@ -1,4 +1,4 @@
-package com.jinwidget;
+package com.customview;
 
 
 import android.content.Context;
@@ -22,7 +22,6 @@ public class TextMoreLayout extends RelativeLayout {
 
 		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TextMoreLayout);
 		try {
-			// 控件的属性列表
 			String leftTxt = a.getString(R.styleable.TextMoreLayout_tmLeftText);
 			String rightTxt = a.getString(R.styleable.TextMoreLayout_tmRightTextTails);
 			boolean rightImgVisible = a.getBoolean(R.styleable.TextMoreLayout_tmRightImgVisible, true);

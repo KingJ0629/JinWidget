@@ -1,4 +1,4 @@
-package com.jinwidget;
+package com.customview;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

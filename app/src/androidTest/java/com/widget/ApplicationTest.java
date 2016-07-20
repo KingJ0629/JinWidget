@@ -1,4 +1,4 @@
-package com.jinwidget;
+package com.widget;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
