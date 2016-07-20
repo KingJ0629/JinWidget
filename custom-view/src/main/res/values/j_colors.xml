@@ -2,5 +2,5 @@
 <resources>
     <color name="white">#ffffff</color>
 
-    <color name="back_white_divider">#ebebeb</color>
+    <color name="grey_divider">#ebebeb</color>
 </resources>
