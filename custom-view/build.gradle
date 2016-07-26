@@ -8,12 +8,11 @@ ext {
     libraryName = 'JinWidget'
     artifact = 'custom-view'
 
-    libraryDescription = 'A widget from Jin'
-
     siteUrl = 'https://github.com/kj387948407/JinWidget'
     gitUrl = 'https://github.com/kj387948407/JinWidget.git'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.2'
+    libraryDescription = 'add TextMoreLayout set text color'
 
     developerId = 'jin'
     developerName = 'Jin Feng'

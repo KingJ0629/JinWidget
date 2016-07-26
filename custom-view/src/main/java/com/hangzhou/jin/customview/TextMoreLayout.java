@@ -22,15 +22,19 @@ public class TextMoreLayout extends RelativeLayout {
 		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TextMoreLayout);
 		try {
 			String leftTxt = a.getString(R.styleable.TextMoreLayout_tmLeftText);
-			String rightTxt = a.getString(R.styleable.TextMoreLayout_tmRightTextTails);
+			String rightTxt = a.getString(R.styleable.TextMoreLayout_tmRightText);
 			boolean rightImgVisible = a.getBoolean(R.styleable.TextMoreLayout_tmRightImgVisible, true);
+			int leftTextColor = a.getColor(R.styleable.TextMoreLayout_tmLeftTextColor, context.getResources().getColor(R.color.tm_default_left_text_color));
+			int rightTextColor = a.getColor(R.styleable.TextMoreLayout_tmRightTextColor, context.getResources().getColor(R.color.tm_default_right_text_color));
 
 			View view = View.inflate(context, R.layout.text_more_layout, null);
 
 			leftText = (TextView) view.findViewById(R.id.leftText);
+			leftText.setTextColor(leftTextColor);
 			if (null != leftTxt)
 				leftText.setText(leftTxt);
 			rightText = (TextView) view.findViewById(R.id.rightText);
+			rightText.setTextColor(rightTextColor);
 			if (null != rightTxt)
 				rightText.setText(rightTxt);
 			if (!rightImgVisible)
