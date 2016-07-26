@@ -18,26 +18,38 @@
             android:layout_height="44dp"
             android:layout_centerVertical="true"
             android:gravity="center"
+            android:text="12123"
             android:textColor="@color/tm_default_left_text_color"
             android:textSize="15dp"/>
 
-        <ImageView
-            android:id="@+id/more"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="8dp"
-            android:background="@mipmap/arrow"/>
+            android:layout_toRightOf="@id/leftText"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/rightText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/more"
-            android:textColor="@color/tm_default_right_text_color"
-            android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/rightText"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="123"
+                android:textColor="@color/tm_default_right_text_color"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@mipmap/arrow"/>
+
+        </LinearLayout>
     </RelativeLayout>
 
     <ImageView

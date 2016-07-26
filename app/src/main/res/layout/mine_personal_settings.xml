@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:TextMoreLayout="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_back">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.hangzhou.jin.customview.TextMoreLayout
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.hangzhou.jin.customview.TextMoreLayout
+                android:id="@+id/sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                TextMoreLayout:tmLeftText="性别"
+                TextMoreLayout:tmLeftTextColor="#333333"
+                TextMoreLayout:tmRightTextColor="#333333"
+                TextMoreLayout:tmRightTextSize="15sp"/>
+
+            <com.hangzhou.jin.customview.TextMoreLayout
+                android:id="@+id/birthDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                TextMoreLayout:tmLeftText="出生日期"
+                TextMoreLayout:tmLeftTextColor="#333333"
+                TextMoreLayout:tmRightTextColor="#333333"
+                TextMoreLayout:tmRightTextSize="15sp"/>
+
+            <com.hangzhou.jin.customview.TextMoreLayout
+                android:id="@+id/ids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                TextMoreLayout:tmLeftText="身份标签"
+                TextMoreLayout:tmLeftTextColor="#333333"
+                TextMoreLayout:tmRightImgVisible="false"
+                TextMoreLayout:tmRightTextColor="#333333"
+                TextMoreLayout:tmRightTextSize="15sp"/>
+
+            <com.hangzhou.jin.customview.TextMoreLayout
+                android:id="@+id/phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                TextMoreLayout:tmLeftText="手机号"
+                TextMoreLayout:tmLeftTextColor="#333333"
+                TextMoreLayout:tmRightTextColor="#333333"
+                TextMoreLayout:tmRightTextSize="15sp"/>
+
+            <com.hangzhou.jin.customview.TextMoreLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                TextMoreLayout:tmLeftText="修改登录密码"
+                TextMoreLayout:tmLeftTextColor="#333333"
+                TextMoreLayout:tmRightTextColor="#333333"
+                TextMoreLayout:tmRightTextSize="15sp"/>
+
+            <TextView
+                android:id="@+id/quit_account"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="退出当前账号"
+                android:textColor="#333333"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

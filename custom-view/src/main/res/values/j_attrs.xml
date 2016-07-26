@@ -9,8 +9,10 @@
     <declare-styleable name="TextMoreLayout">
         <attr name="tmLeftText" format="string" />
         <attr name="tmLeftTextColor" format="color" />
+        <attr name="tmLeftTextSize" format="dimension" />
         <attr name="tmRightText" format="string" />
         <attr name="tmRightTextColor" format="color" />
+        <attr name="tmRightTextSize" format="dimension" />
         <attr name="tmRightImgVisible" format="boolean" />
     </declare-styleable>
 </resources>
