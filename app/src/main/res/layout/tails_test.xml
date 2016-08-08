@@ -27,4 +27,17 @@
         android:text="mTailsTextLayout"
         TailsTextView:rightTextColor="@color/green"
         TailsTextView:rightTextTails="后缀"/>
+
+    <com.hangzhou.jin.customview.TailsTextView
+        android:id="@+id/mTailsTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_back"
+        android:gravity="center"
+        android:text="mTailsTextLayout"
+        TailsTextView:leftTextColor="@color/red"
+        TailsTextView:leftTextTails="前缀"
+        TailsTextView:rightTextColor="@color/green"
+        TailsTextView:rightTextTails="后缀"/>
 </LinearLayout>

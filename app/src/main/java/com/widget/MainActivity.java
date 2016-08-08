@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
 	private Activity mActivity;
 
-	private TextView mTextMoreLayout, mTailsTextLayout;
+	private TextView mTextMoreLayout, mTailsTextView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 
-		mTailsTextLayout = (TextView) findViewById(R.id.mTailsTextLayout);
-		mTailsTextLayout.setOnClickListener(new View.OnClickListener() {
+		mTailsTextView = (TextView) findViewById(R.id.mTailsTextView);
+		mTailsTextView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
 				startActivity(new Intent(mActivity, TailsTextLayoutTestActivity.class));

@@ -11,8 +11,8 @@ ext {
     siteUrl = 'https://github.com/kj387948407/JinWidget'
     gitUrl = 'https://github.com/kj387948407/JinWidget.git'
 
-    libraryVersion = '1.0.5'
-    libraryDescription = 'add TextMoreLayout set text size & fix bug'
+    libraryVersion = '1.0.7'
+    libraryDescription = 'add TailsTextLayout textColor control && fix'
 
     developerId = 'jin'
     developerName = 'Jin Feng'

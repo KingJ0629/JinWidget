@@ -45,11 +45,6 @@ public class TailsTextView extends TextView {
 		innerTxt = getText().toString();
 		this.setText(innerTxt + "");
 
-		SpannableString ss = new SpannableString(getText());
-		ss.setSpan(new ForegroundColorSpan(leftTextColor), 0, leftTxt.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-		ss.setSpan(new ForegroundColorSpan(rightTextColor), this.length() - rightTxt.length(), this.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-		this.setSpannableString(ss);
-
 		if (lineThrough) {
 			this.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 		}
@@ -58,6 +53,11 @@ public class TailsTextView extends TextView {
 	public void setText(String str) {
 		innerTxt = str;
 		super.setText(leftTxt + str + rightTxt);
+
+		SpannableString ss = new SpannableString(getText());
+		ss.setSpan(new ForegroundColorSpan(leftTextColor), 0, leftTxt.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+		ss.setSpan(new ForegroundColorSpan(rightTextColor), this.length() - rightTxt.length(), this.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+		this.setSpannableString(ss);
 	}
 
 	private void setSpannableString(SpannableString ss) {
