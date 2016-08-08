@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".MinePersonalSettingsActivity"/>
+        <activity android:name=".TailsTextLayoutTestActivity"/>
     </application>
 
 </manifest>

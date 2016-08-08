@@ -18,7 +18,6 @@
             android:layout_height="44dp"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:text="12123"
             android:textColor="@color/tm_default_left_text_color"
             android:textSize="15dp"/>
 
@@ -36,7 +35,6 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:gravity="center"
-                android:text="123"
                 android:textColor="@color/tm_default_right_text_color"
                 android:textSize="12sp"/>
 

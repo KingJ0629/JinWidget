@@ -3,6 +3,9 @@ package com.hangzhou.jin.customview;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -16,6 +19,9 @@ public class TailsTextView extends TextView {
 	private String innerTxt = "";
 	private boolean lineThrough = false;
 
+	private int leftTextColor;
+	private int rightTextColor;
+
 	public TailsTextView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
@@ -24,6 +30,9 @@ public class TailsTextView extends TextView {
 			leftTxt = a.getString(R.styleable.TailsTextView_leftTextTails);
 			rightTxt = a.getString(R.styleable.TailsTextView_rightTextTails);
 			lineThrough = a.getBoolean(R.styleable.TailsTextView_line_through, false);
+
+			leftTextColor = a.getColor(R.styleable.TailsTextView_leftTextColor, getCurrentTextColor());
+			rightTextColor = a.getColor(R.styleable.TailsTextView_rightTextColor, getCurrentTextColor());
 		} finally {
 			a.recycle();
 		}
@@ -36,6 +45,11 @@ public class TailsTextView extends TextView {
 		innerTxt = getText().toString();
 		this.setText(innerTxt + "");
 
+		SpannableString ss = new SpannableString(getText());
+		ss.setSpan(new ForegroundColorSpan(leftTextColor), 0, leftTxt.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+		ss.setSpan(new ForegroundColorSpan(rightTextColor), this.length() - rightTxt.length(), this.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+		this.setSpannableString(ss);
+
 		if (lineThrough) {
 			this.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 		}
@@ -44,6 +58,10 @@ public class TailsTextView extends TextView {
 	public void setText(String str) {
 		innerTxt = str;
 		super.setText(leftTxt + str + rightTxt);
+	}
+
+	private void setSpannableString(SpannableString ss) {
+		super.setText(ss);
 	}
 
 	public void setLeftTxt(String str) {

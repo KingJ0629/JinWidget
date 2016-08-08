@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
 
     <color name="grey_back">#ebebeb</color>
+    <color name="red">#ff3939</color>
+    <color name="green">#66CDAA</color>
 </resources>
