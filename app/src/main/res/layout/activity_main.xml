@@ -31,4 +31,13 @@
         android:background="@color/grey_back"
         android:gravity="center"
         android:text="mLoadView"/>
+
+    <TextView
+        android:id="@+id/mJRecyclerViewTest"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_back"
+        android:gravity="center"
+        android:text="mJRecyclerViewTest"/>
 </LinearLayout>

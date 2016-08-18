@@ -19,6 +19,7 @@
         <activity android:name=".MinePersonalSettingsActivity"/>
         <activity android:name=".TailsTextLayoutTestActivity"/>
         <activity android:name=".TestLoadView"/>
+        <activity android:name=".JRecyclerViewTest"/>
     </application>
 
 </manifest>
