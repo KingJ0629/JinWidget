@@ -21,11 +21,8 @@ public class JRecyclerView extends FrameLayout {
 	private SwipeRefreshLayout mSwipeRefreshLayout;
 	private LoadView mLoadView;
 
-	private Context context;
-
 	public JRecyclerView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		this.context = context;
 
 		View view = View.inflate(context, R.layout.j_recycler_view, null);
 
@@ -91,18 +88,10 @@ public class JRecyclerView extends FrameLayout {
 		mLoadView.loadCompleteNoDataDef();
 	}
 
-	/**
-	 * 已经在xml中配置属性
-	 */
 	public void loadCompleteNoDataAttr() {
 		mLoadView.loadCompleteNoDataAttr();
 	}
 
-	/**
-	 * 没数据时候展现的View
-	 * @param res 图片资源文件
-	 * @param text 文本
-	 */
 	public void loadCompleteNoData(@DrawableRes int res, String text) {
 		mLoadView.loadCompleteNoData(res, text);
 	}
@@ -118,10 +107,6 @@ public class JRecyclerView extends FrameLayout {
 	public void loadCompleteNoData(String text) {
 		mLoadView.loadCompleteNoData(text);
 	}
-
-	/**
-	 * 正在加载中...
-	 */
 	public void loading() {
 		mLoadView.loading();
 	}

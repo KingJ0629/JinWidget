@@ -57,9 +57,6 @@ public class LoadView extends RelativeLayout {
 		loadCompleteNoData(R.mipmap.none_data_icon, "暂无相关内容");
 	}
 
-	/**
-	 * 已经在xml中配置属性
-	 */
 	public void loadCompleteNoDataAttr() {
 		imageView.setVisibility(VISIBLE);
 		textView.setVisibility(VISIBLE);
@@ -67,11 +64,6 @@ public class LoadView extends RelativeLayout {
 		progressLayout.setVisibility(GONE);
 	}
 
-	/**
-	 * 没数据时候展现的View
-	 * @param res 图片资源文件
-	 * @param text 文本
-	 */
 	public void loadCompleteNoData(@DrawableRes int res, String text) {
 		textView.setText(text);
 		loadCompleteNoData(res);
@@ -98,9 +90,6 @@ public class LoadView extends RelativeLayout {
 		progressLayout.setVisibility(GONE);
 	}
 
-	/**
-	 * 正在加载中...
-	 */
 	public void loading() {
 		noDataLayout.setVisibility(GONE);
 		progressLayout.setVisibility(VISIBLE);
