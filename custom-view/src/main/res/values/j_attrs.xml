@@ -17,4 +17,9 @@
         <attr name="tmRightTextSize" format="dimension" />
         <attr name="tmRightImgVisible" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="LoadView">
+        <attr name="LoadViewNoDataText" format="string" />
+        <attr name="LoadViewNoDataImg" format="integer" />
+    </declare-styleable>
 </resources>

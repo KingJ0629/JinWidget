@@ -18,6 +18,7 @@
 
         <activity android:name=".MinePersonalSettingsActivity"/>
         <activity android:name=".TailsTextLayoutTestActivity"/>
+        <activity android:name=".TestLoadView"/>
     </application>
 
 </manifest>

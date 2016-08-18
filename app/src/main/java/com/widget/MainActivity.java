@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
 	private Activity mActivity;
 
-	private TextView mTextMoreLayout, mTailsTextView;
+	private TextView mTextMoreLayout, mTailsTextView, mLoadView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View view) {
 				startActivity(new Intent(mActivity, TailsTextLayoutTestActivity.class));
+			}
+		});
+
+		mLoadView = (TextView) findViewById(R.id.mLoadView);
+		mLoadView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(mActivity, TestLoadView.class));
 			}
 		});
 	}

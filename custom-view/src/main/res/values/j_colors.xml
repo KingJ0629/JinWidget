@@ -2,9 +2,11 @@
 <resources>
     <color name="white">#ffffff</color>
 
-    <color name="grey_divider">#ebebeb</color>
+    <color name="grey_back">#ebebeb</color>
 
 
     <color name="tm_default_left_text_color">#666666</color>
     <color name="tm_default_right_text_color">#aaaaaa</color>
+
+    <color name="load_view_font_color_gray">#aaaaaa</color>
 </resources>

@@ -17,6 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    allprojects {
+        repositories {
+            // BaseRecyclerViewAdapterHelper
+            maven { url "https://jitpack.io" }
+        }
+    }
 }
 
 dependencies {
@@ -24,4 +30,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':custom-view')
     compile 'com.android.support:appcompat-v7:24.1.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.8.5'
 }
