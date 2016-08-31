@@ -90,6 +90,14 @@ public class LoadView extends RelativeLayout {
 		progressLayout.setVisibility(GONE);
 	}
 
+	public void loadCompleteNoDataNoImg(String text) {
+		imageView.setVisibility(GONE);
+		textView.setText(text);
+		textView.setVisibility(VISIBLE);
+		noDataLayout.setVisibility(VISIBLE);
+		progressLayout.setVisibility(GONE);
+	}
+
 	public void loading() {
 		noDataLayout.setVisibility(GONE);
 		progressLayout.setVisibility(VISIBLE);
