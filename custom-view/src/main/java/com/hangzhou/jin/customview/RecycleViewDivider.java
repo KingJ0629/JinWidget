@@ -29,7 +29,7 @@ public class RecycleViewDivider extends RecyclerView.ItemDecoration {
 	 */
 	public RecycleViewDivider(Context context, int orientation) {
 		if (orientation != LinearLayoutManager.VERTICAL && orientation != LinearLayoutManager.HORIZONTAL) {
-			throw new IllegalArgumentException("Please enter the correct parameters！");
+			throw new IllegalArgumentException("Please enter the correct parameters!");
 		}
 		mOrientation = orientation;
 
