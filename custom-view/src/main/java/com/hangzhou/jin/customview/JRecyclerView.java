@@ -21,8 +21,11 @@ public class JRecyclerView extends FrameLayout {
 	private SwipeRefreshLayout mSwipeRefreshLayout;
 	private LoadView mLoadView;
 
+	private Context context;
+
 	public JRecyclerView(Context context, AttributeSet attrs) {
 		super(context, attrs);
+		this.context = context;
 
 		View view = View.inflate(context, R.layout.j_recycler_view, null);
 
@@ -51,9 +54,13 @@ public class JRecyclerView extends FrameLayout {
 		mRecyclerView.addItemDecoration(decor);
 	}
 
+	public void addItemDecorationDef() {
+		mRecyclerView.addItemDecoration(new RecycleViewDivider(context, LinearLayoutManager.HORIZONTAL, 1, R.color.grey_back));
+	}
+
 	public void addItemDecoration(@DimenRes int res) {
 		int spacingInPixels = getResources().getDimensionPixelSize(res);
-		mRecyclerView.addItemDecoration(new SpaceItemDecoration(spacingInPixels));
+		addItemDecoration(new SpaceItemDecoration(spacingInPixels));
 	}
 
 	public void setAdapter(RecyclerView.Adapter adapter) {
@@ -64,6 +71,11 @@ public class JRecyclerView extends FrameLayout {
 		mRecyclerView.setLayoutManager(layout);
 	}
 
+	public void MarginTop(@DimenRes int res) {
+		mRecyclerView.setClipToPadding(false);
+		int spacingInPixels = getResources().getDimensionPixelSize(res);
+		mRecyclerView.setPadding(0, spacingInPixels, 0, 0);
+	}
 
 	/**------------------------------- refresh view ----------------------------------**/
 	/**
@@ -98,6 +110,10 @@ public class JRecyclerView extends FrameLayout {
 
 	public void loadCompleteNoData(@DrawableRes int res, @StringRes int str) {
 		mLoadView.loadCompleteNoData(res, str);
+	}
+
+	public void loadCompleteNoDataNoImg(String text) {
+		mLoadView.loadCompleteNoDataNoImg(text);
 	}
 
 	public void loadCompleteNoData(@DrawableRes int res) {

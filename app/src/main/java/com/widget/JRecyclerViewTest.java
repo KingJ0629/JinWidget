@@ -53,6 +53,7 @@ public class JRecyclerViewTest extends AppCompatActivity {
 		mJRecyclerView = (JRecyclerView) findViewById(R.id.jRecyclerView);
 		// 设置空隙
 		mJRecyclerView.addItemDecoration(R.dimen.recycler_view_item_space);
+		mJRecyclerView.addItemDecorationDef();
 
 		list = new ArrayList<>();
 		array = getResources().getStringArray(R.array.ferry);
@@ -61,6 +62,7 @@ public class JRecyclerViewTest extends AppCompatActivity {
 		}
 		mAdapter = new CustomAdapter(null);
 		mJRecyclerView.setAdapter(mAdapter);
+		mJRecyclerView.MarginTop(R.dimen.recycler_view_item_space);
 
 		mAdapter.openLoadMore(array.length, true);
 
