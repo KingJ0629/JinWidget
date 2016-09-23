@@ -25,6 +25,7 @@
         android:background="@color/grey_back"
         android:gravity="center"
         android:text="mTailsTextLayout"
+        TailsTextView:line_under="true"
         TailsTextView:rightTextColor="@color/green"
         TailsTextView:rightTextTails="后缀"/>
 
@@ -38,6 +39,7 @@
         android:text="mTailsTextLayout"
         TailsTextView:leftTextColor="@color/red"
         TailsTextView:leftTextTails="前缀"
+        TailsTextView:line_through="true"
         TailsTextView:rightTextColor="@color/green"
         TailsTextView:rightTextTails="后缀"/>
 </LinearLayout>

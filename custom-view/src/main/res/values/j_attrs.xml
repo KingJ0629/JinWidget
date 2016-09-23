@@ -4,6 +4,7 @@
         <attr name="leftTextTails" format="string" />
         <attr name="rightTextTails" format="string" />
         <attr name="line_through" format="boolean" />
+        <attr name="line_under" format="boolean" />
         <attr name="leftTextColor" format="color" />
         <attr name="rightTextColor" format="color" />
     </declare-styleable>

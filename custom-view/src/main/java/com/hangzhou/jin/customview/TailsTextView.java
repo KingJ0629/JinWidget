@@ -18,6 +18,7 @@ public class TailsTextView extends TextView {
 	private String rightTxt = "";
 	private String innerTxt = "";
 	private boolean lineThrough = false;
+	private boolean lineUnder = false;
 
 	private int leftTextColor;
 	private int rightTextColor;
@@ -30,6 +31,7 @@ public class TailsTextView extends TextView {
 			leftTxt = a.getString(R.styleable.TailsTextView_leftTextTails);
 			rightTxt = a.getString(R.styleable.TailsTextView_rightTextTails);
 			lineThrough = a.getBoolean(R.styleable.TailsTextView_line_through, false);
+			lineUnder = a.getBoolean(R.styleable.TailsTextView_line_under, false);
 
 			leftTextColor = a.getColor(R.styleable.TailsTextView_leftTextColor, getCurrentTextColor());
 			rightTextColor = a.getColor(R.styleable.TailsTextView_rightTextColor, getCurrentTextColor());
@@ -47,6 +49,12 @@ public class TailsTextView extends TextView {
 
 		if (lineThrough) {
 			this.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+			this.getPaint().setAntiAlias(true);
+		}
+
+		if (lineUnder) {
+			this.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
+			this.getPaint().setAntiAlias(true);
 		}
 	}
 
