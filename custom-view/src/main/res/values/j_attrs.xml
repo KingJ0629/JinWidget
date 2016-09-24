@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="TailsTextView">
-        <attr name="leftTextTails" format="string" />
-        <attr name="rightTextTails" format="string" />
-        <attr name="line_through" format="boolean" />
-        <attr name="line_under" format="boolean" />
-        <attr name="leftTextColor" format="color" />
-        <attr name="rightTextColor" format="color" />
+        <attr name="leftTextTails" format="string"/>
+        <attr name="rightTextTails" format="string"/>
+        <attr name="line_through" format="boolean"/>
+        <attr name="line_under" format="boolean"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="rightTextColor" format="color"/>
     </declare-styleable>
 
     <declare-styleable name="TextMoreLayout">
-        <attr name="tmLeftText" format="string" />
-        <attr name="tmLeftTextColor" format="color" />
-        <attr name="tmLeftTextSize" format="dimension" />
-        <attr name="tmRightText" format="string" />
-        <attr name="tmRightTextColor" format="color" />
-        <attr name="tmRightTextSize" format="dimension" />
-        <attr name="tmRightImgVisible" format="boolean" />
+        <attr name="tmLeftText" format="string"/>
+        <attr name="tmLeftTextColor" format="color"/>
+        <attr name="tmLeftTextSize" format="dimension"/>
+        <attr name="tmRightText" format="string"/>
+        <attr name="tmRightTextColor" format="color"/>
+        <attr name="tmRightTextSize" format="dimension"/>
+        <attr name="tmRightImgVisible" format="boolean"/>
     </declare-styleable>
 
     <declare-styleable name="LoadView">
-        <attr name="LoadViewNoDataText" format="string" />
-        <attr name="LoadViewNoDataImg" format="integer" />
+        <attr name="LoadViewNoDataText" format="string"/>
+        <attr name="LoadViewNoDataImg" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SuperText">
+        <attr name="ST" format="dimension"/>
+        <attr name="SS" format="dimension"/>
+        <attr name="SM" format="dimension"/>
+        <attr name="SB" format="dimension"/>
+        <attr name="SH" format="dimension"/>
+        <attr name="textAttr">
+            <flag name="ST" value="1"/>
+            <flag name="SS" value="2"/>
+            <flag name="SM" value="3"/>
+            <flag name="SB" value="4"/>
+            <flag name="SH" value="5"/>
+            <flag name="C1" value="10"/>
+            <flag name="C2" value="20"/>
+            <flag name="C3" value="30"/>
+            <flag name="C4" value="40"/>
+            <flag name="L1" value="100"/>
+            <flag name="L2" value="200"/>
+        </attr>
     </declare-styleable>
 </resources>
