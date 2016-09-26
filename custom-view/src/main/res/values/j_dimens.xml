@@ -3,4 +3,10 @@
     <dimen name="text_more_layout_default_left_text_size">15sp</dimen>
 
     <dimen name="recycler_view_item_space">8dp</dimen>
+
+    <dimen name="super_text_ST">10sp</dimen>
+    <dimen name="super_text_SS">12sp</dimen>
+    <dimen name="super_text_SM">15sp</dimen>
+    <dimen name="super_text_SB">18sp</dimen>
+    <dimen name="super_text_SH">21sp</dimen>
 </resources>

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 
     <color name="grey_back">#ebebeb</color>
-
 
     <color name="tm_default_left_text_color">#666666</color>
     <color name="tm_default_right_text_color">#aaaaaa</color>
 
     <color name="load_view_font_color_gray">#aaaaaa</color>
+
+    <color name="super_text_c3">#333333</color>
+    <color name="super_text_c6">#666666</color>
+    <color name="super_text_ca">#aaaaaa</color>
+    <color name="super_text_cf">#ffffff</color>
+    <color name="super_text_c0">#000000</color>
+
+
 </resources>

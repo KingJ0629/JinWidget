@@ -30,18 +30,22 @@
         <attr name="SM" format="dimension"/>
         <attr name="SB" format="dimension"/>
         <attr name="SH" format="dimension"/>
+        <attr name="C0" format="color"/>
+        <attr name="L0" format="integer"/>
         <attr name="textAttr">
-            <flag name="ST" value="1"/>
-            <flag name="SS" value="2"/>
-            <flag name="SM" value="3"/>
-            <flag name="SB" value="4"/>
-            <flag name="SH" value="5"/>
-            <flag name="C1" value="10"/>
-            <flag name="C2" value="20"/>
-            <flag name="C3" value="30"/>
-            <flag name="C4" value="40"/>
-            <flag name="L1" value="100"/>
-            <flag name="L2" value="200"/>
+            <flag name="ST" value="0x1"/>
+            <flag name="SS" value="0x2"/>
+            <flag name="SM" value="0x3"/>
+            <flag name="SB" value="0x4"/>
+            <flag name="SH" value="0x5"/>
+            <flag name="C3" value="0x10"/>
+            <flag name="C6" value="0x20"/>
+            <flag name="CA" value="0x30"/>
+            <flag name="CF" value="0x40"/>
+            <flag name="C0" value="0x90"/>
+            <flag name="L1" value="0x100"/>
+            <flag name="L2" value="0x200"/>
+            <flag name="L0" value="0x900"/>
         </attr>
     </declare-styleable>
 </resources>

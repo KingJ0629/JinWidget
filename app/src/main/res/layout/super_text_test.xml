@@ -13,5 +13,5 @@
         android:background="@color/grey_back"
         android:gravity="center"
         android:text="mSuperText"
-        SuperText:textAttr="SB|L2|C1"/>
+        SuperText:textAttr="C3|SH|L0"/>
 </LinearLayout>
