@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 24
@@ -23,6 +25,9 @@ android {
             maven { url "https://jitpack.io" }
         }
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
 dependencies {
@@ -31,4 +36,8 @@ dependencies {
     compile project(':custom-view')
     compile 'com.android.support:appcompat-v7:24.1.0'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.8.5'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

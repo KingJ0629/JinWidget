@@ -5,6 +5,7 @@ tasks.withType(JavaCompile) {
 }
 
 buildscript {
+    ext.kotlin_version = '1.0.4'
     repositories {
         jcenter()
     }
@@ -13,6 +14,7 @@ buildscript {
 
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
