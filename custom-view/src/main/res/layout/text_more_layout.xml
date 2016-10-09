@@ -19,21 +19,20 @@
             android:layout_centerVertical="true"
             android:gravity="center"
             android:textColor="@color/tm_default_left_text_color"
-            android:textSize="15dp"/>
+            android:textSize="15sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/leftText"
             android:layout_toRightOf="@id/leftText"
-            android:gravity="right|center_vertical"
+            android:gravity="end|center_vertical"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/rightText"
                 android:layout_width="wrap_content"
                 android:layout_height="44dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
                 android:gravity="center"
                 android:textColor="@color/tm_default_right_text_color"
                 android:textSize="12sp"/>
@@ -42,16 +41,16 @@
                 android:id="@+id/more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
                 android:layout_marginLeft="8dp"
-                android:background="@mipmap/arrow"/>
+                android:layout_marginStart="8dp"
+                android:background="@mipmap/text_more_view_right_arrow"
+                android:contentDescription="@null"/>
 
         </LinearLayout>
     </RelativeLayout>
 
     <ImageView
         style="@style/jin_custom_view_line_horizontal"
-        android:layout_alignBottom="@id/layout"/>
-
+        android:layout_alignBottom="@id/layout"
+        android:contentDescription="@null"/>
 </RelativeLayout>
