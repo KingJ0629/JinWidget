@@ -13,9 +13,9 @@ import android.widget.TextView;
  * Description
  * ST:size tiny | SS:size small | SM:size middle | SB:size big | SH:size huge
  * C3:color(#333333) | C6:color(#666666) | CA:color(#aaaaaa) | CF:color(#ffffff)
- * C0:custom color & default #000000
+ * C0:custom color @@@ default #000000
  * L1:line(1) | L2:line(2)
- * L0:custom line number & default line(2147483647)
+ * L0:custom line number @@@ default line(2147483647)
  */
 public class SuperText extends TextView {
 
