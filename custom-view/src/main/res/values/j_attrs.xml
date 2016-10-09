@@ -24,7 +24,7 @@
         <attr name="LoadViewNoDataImg" format="integer"/>
     </declare-styleable>
 
-    <declare-styleable name="SuperText2">
+    <declare-styleable name="SuperText">
         <attr name="ST" format="dimension"/>
         <attr name="SS" format="dimension"/>
         <attr name="SM" format="dimension"/>

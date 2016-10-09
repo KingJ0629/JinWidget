@@ -17,28 +17,28 @@ import android.widget.TextView;
  * L1:line(1) | L2:line(2)
  * L0:custom line number & default line(2147483647)
  */
-public class SuperText2 extends TextView {
+public class SuperText extends TextView {
 
-	public SuperText2(Context context, AttributeSet attrs) {
+	public SuperText(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
-		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SuperText2);
+		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SuperText);
 		try {
-			String value_ = a.getString(R.styleable.SuperText2_textAttr);
+			String value_ = a.getString(R.styleable.SuperText_textAttr);
 			int value = -1;
 			if (null != value_) {
 				value_ = value_.replace("0x", "");
 				value = Integer.parseInt(value_);
 			}
 
-			float ST = a.getDimension(R.styleable.SuperText2_ST, getResources().getDimensionPixelSize(R.dimen.super_text_ST));
-			float SS = a.getDimension(R.styleable.SuperText2_SS, getResources().getDimensionPixelSize(R.dimen.super_text_SS));
-			float SM = a.getDimension(R.styleable.SuperText2_SM, getResources().getDimensionPixelSize(R.dimen.super_text_SM));
-			float SB = a.getDimension(R.styleable.SuperText2_SB, getResources().getDimensionPixelSize(R.dimen.super_text_SB));
-			float SH = a.getDimension(R.styleable.SuperText2_SH, getResources().getDimensionPixelSize(R.dimen.super_text_SH));
+			float ST = a.getDimension(R.styleable.SuperText_ST, getResources().getDimensionPixelSize(R.dimen.super_text_ST));
+			float SS = a.getDimension(R.styleable.SuperText_SS, getResources().getDimensionPixelSize(R.dimen.super_text_SS));
+			float SM = a.getDimension(R.styleable.SuperText_SM, getResources().getDimensionPixelSize(R.dimen.super_text_SM));
+			float SB = a.getDimension(R.styleable.SuperText_SB, getResources().getDimensionPixelSize(R.dimen.super_text_SB));
+			float SH = a.getDimension(R.styleable.SuperText_SH, getResources().getDimensionPixelSize(R.dimen.super_text_SH));
 
-			int C0 = a.getColor(R.styleable.SuperText2_C0, ContextCompat.getColor(context, R.color.super_text_c0));
-			int L0 = a.getInt(R.styleable.SuperText2_L0, Integer.MAX_VALUE);
+			int C0 = a.getColor(R.styleable.SuperText_C0, ContextCompat.getColor(context, R.color.super_text_c0));
+			int L0 = a.getInt(R.styleable.SuperText_L0, Integer.MAX_VALUE);
 
 			// lines
 			this.setEllipsize(TextUtils.TruncateAt.END);
