@@ -17,7 +17,7 @@
         </activity>
 
         <activity android:name=".MinePersonalSettingsActivity"/>
-        <activity android:name=".TailsTextLayoutTestActivity"/>
+        <activity android:name=".TestTailsTextLayoutActivity"/>
         <activity android:name=".TestLoadView"/>
         <activity android:name=".JRecyclerViewTest"/>
         <activity android:name=".SuperTextTestActivity"/>

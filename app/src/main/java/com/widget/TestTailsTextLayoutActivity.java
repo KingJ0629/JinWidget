@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.hangzhou.jin.customview.TailsTextView;
 
-public class TailsTextLayoutTestActivity extends AppCompatActivity {
+public class TestTailsTextLayoutActivity extends AppCompatActivity {
 
 	private TailsTextView mTailsTextView3;
 

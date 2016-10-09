@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 		mTailsTextView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				startActivity(new Intent(mActivity, TailsTextLayoutTestActivity.class));
+				startActivity(new Intent(mActivity, TestTailsTextLayoutActivity.class));
 			}
 		});
 
