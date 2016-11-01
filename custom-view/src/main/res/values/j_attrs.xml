@@ -17,6 +17,7 @@
         <attr name="tmRightTextColor" format="color"/>
         <attr name="tmRightTextSize" format="dimension"/>
         <attr name="tmRightImgVisible" format="boolean"/>
+        <attr name="tmBottomLineVisible" format="boolean"/>
     </declare-styleable>
 
     <declare-styleable name="LoadView">

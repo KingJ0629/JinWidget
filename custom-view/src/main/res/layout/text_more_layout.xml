@@ -50,6 +50,7 @@
     </RelativeLayout>
 
     <ImageView
+        android:id="@+id/bottom_line"
         style="@style/jin_custom_view_line_horizontal"
         android:layout_alignBottom="@id/layout"
         android:contentDescription="@null"/>

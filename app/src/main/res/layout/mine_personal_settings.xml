@@ -57,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 TextMoreLayout:tmLeftText="手机号"
+                TextMoreLayout:tmBottomLineVisible="false"
                 TextMoreLayout:tmLeftTextColor="#333333"
                 TextMoreLayout:tmRightTextColor="#333333"
                 TextMoreLayout:tmRightTextSize="15sp"/>

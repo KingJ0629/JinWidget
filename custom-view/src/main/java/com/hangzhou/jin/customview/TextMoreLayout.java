@@ -25,6 +25,7 @@ public class TextMoreLayout extends RelativeLayout {
 			String leftTxt = a.getString(R.styleable.TextMoreLayout_tmLeftText);
 			String rightTxt = a.getString(R.styleable.TextMoreLayout_tmRightText);
 			boolean rightImgVisible = a.getBoolean(R.styleable.TextMoreLayout_tmRightImgVisible, true);
+			boolean bottomLineVisible = a.getBoolean(R.styleable.TextMoreLayout_tmBottomLineVisible, true);
 			int leftTextColor = a.getColor(R.styleable.TextMoreLayout_tmLeftTextColor, context.getResources().getColor(R.color.tm_default_left_text_color));
 			int rightTextColor = a.getColor(R.styleable.TextMoreLayout_tmRightTextColor, context.getResources().getColor(R.color.tm_default_right_text_color));
 
@@ -48,6 +49,8 @@ public class TextMoreLayout extends RelativeLayout {
 				rightText.setText(rightTxt);
 			if (!rightImgVisible)
 				view.findViewById(R.id.more).setVisibility(View.GONE);
+
+			view.findViewById(R.id.bottom_line).setVisibility(bottomLineVisible ? View.VISIBLE : View.GONE);
 
 			this.addView(view);
 		} finally {
