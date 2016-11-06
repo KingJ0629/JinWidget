@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
 	private Activity mActivity;
 
-	private TextView mTextMoreLayout, mTailsTextView, mLoadView, mJRecyclerViewTest, mSuperText;
+	private TextView mTextMoreLayout, mTailsTextView, mLoadView, mJRecyclerViewTest, mSuperText, mTitleView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View view) {
 				startActivity(new Intent(mActivity, SuperTextTestActivity.class));
+			}
+		});
+
+		mTitleView = (TextView) findViewById(R.id.mTitleView);
+		mTitleView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(mActivity, TitleViewTestActivity.class));
 			}
 		});
 	}

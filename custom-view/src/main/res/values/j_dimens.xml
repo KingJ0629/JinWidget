@@ -9,4 +9,6 @@
     <dimen name="super_text_SM">15sp</dimen>
     <dimen name="super_text_SB">18sp</dimen>
     <dimen name="super_text_SH">21sp</dimen>
+
+    <dimen name="title_view_default_text_size">15sp</dimen>
 </resources>

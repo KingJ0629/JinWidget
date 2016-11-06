@@ -21,6 +21,7 @@
         <activity android:name=".TestLoadView"/>
         <activity android:name=".JRecyclerViewTest"/>
         <activity android:name=".SuperTextTestActivity"/>
+        <activity android:name=".TitleViewTestActivity"/>
     </application>
 
 </manifest>
