@@ -25,6 +25,12 @@
         <attr name="LoadViewNoDataImg" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="TitleView">
+        <attr name="leftLayoutVisible" format="boolean"/>
+        <attr name="title" format="string"/>
+        <attr name="defaultLeftIcon" format="boolean"/>
+    </declare-styleable>
+
     <declare-styleable name="SuperText">
         <attr name="ST" format="dimension"/>
         <attr name="SS" format="dimension"/>

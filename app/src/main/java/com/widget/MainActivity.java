@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.widget.title.TitleMainActivity;
+
 public class MainActivity extends AppCompatActivity {
 
 	private Activity mActivity;
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 		mTitleView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				startActivity(new Intent(mActivity, TitleViewTestActivity.class));
+				startActivity(new Intent(mActivity, TitleMainActivity.class));
 			}
 		});
 	}

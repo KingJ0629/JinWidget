@@ -17,7 +17,7 @@ public class Title {
 	 * @return
 	 */
 	public static TitleView getView(Context context) {
-		return (TitleView) ((Activity) context).findViewById(R.id.title);
+		return (TitleView) ((Activity) context).findViewById(R.id.title_view);
 	}
 
 	/**
@@ -29,21 +29,6 @@ public class Title {
 		TitleView title = getView(context);
 		title.setTitle(titleStr);
 		title.injectLeftImg();
-		title.invalidate();
-	}
-
-	/**
-	 * just --> title
-	 * @param context context
-	 * @param leftNullCode if leftNullCode == 0 --> none left
-	 * @param titleStr title
-	 */
-	public static void init(int leftNullCode, Context context, String titleStr) {
-		TitleView title = getView(context);
-		title.setTitle(titleStr);
-		if (leftNullCode != 0) {
-			title.injectLeftImg();
-		}
 		title.invalidate();
 	}
 
@@ -221,6 +206,22 @@ public class Title {
 		TitleView title = getView(context);
 		title.setTitle(titleStr);
 		title.injectLeftImg(mOnClickListener);
+		title.injectRightView(view, mOnClickListener2);
+		title.invalidate();
+	}
+
+	public static TitleView getView(View root) {
+		return (TitleView) root.findViewById(R.id.title_view);
+	}
+
+	/**
+	 * use it in Fragment
+	 * title + tight icon
+	 * @param titleStr title
+	 */
+	public static void finit(View root, String titleStr, View view, View.OnClickListener mOnClickListener2) {
+		TitleView title = getView(root);
+		title.setTitle(titleStr);
 		title.injectRightView(view, mOnClickListener2);
 		title.invalidate();
 	}

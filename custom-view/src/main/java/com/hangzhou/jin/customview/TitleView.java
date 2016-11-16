@@ -2,6 +2,7 @@ package com.hangzhou.jin.customview;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.support.annotation.ColorRes;
 import android.support.annotation.DimenRes;
 import android.support.annotation.DrawableRes;
@@ -20,21 +21,21 @@ import android.widget.TextView;
  */
 public class TitleView extends RelativeLayout {
 
+	private final static String TAG = "TitleView";
+
 	private Context mContext;
 	private LinearLayout leftLayout, rightLayout;
 	private TextView titleTxt;
+
+	// back icon
+	private boolean defaultLeftIcon;
 
 	public TitleView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
 		this.mContext = context;
 
-//		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TailsTextView);
-//		try {
-//
-//		} finally {
-//			a.recycle();
-//		}
+		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TitleView);
 
 		View view = View.inflate(context, R.layout.title_view, null);
 
@@ -42,6 +43,19 @@ public class TitleView extends RelativeLayout {
 		rightLayout = (LinearLayout) view.findViewById(R.id.title_view_right);
 		titleTxt = (TextView) view.findViewById(R.id.title_view_title_text);
 
+		try {
+			boolean leftLayoutVisible = a.getBoolean(R.styleable.TitleView_leftLayoutVisible, true);
+			defaultLeftIcon = a.getBoolean(R.styleable.TitleView_defaultLeftIcon, false);
+			String titleStr = a.getString(R.styleable.TitleView_title);
+
+			leftLayout.setVisibility(leftLayoutVisible ? View.VISIBLE : View.GONE);
+			if (defaultLeftIcon) {
+				injectLeftImg();
+			}
+			titleTxt.setText(titleStr);
+		} finally {
+			a.recycle();
+		}
 		this.addView(view);
 	}
 
@@ -85,6 +99,9 @@ public class TitleView extends RelativeLayout {
 
 	/**********************  Left  Img  **************************/
 	public ImageView injectLeftImg() {
+		if (leftLayout.getChildCount() > 0) {
+			return null;
+		}
 		return injectLeftImg(R.mipmap.title_left_back);
 	}
 
@@ -95,12 +112,13 @@ public class TitleView extends RelativeLayout {
 	public ImageView injectLeftImg(@DrawableRes int res) {
 		ImageView iv = new ImageView(mContext);
 		iv.setImageResource(res);
-
 		return (ImageView) injectLeftView(iv);
 	}
 
 	public ImageView injectLeftImg(@DrawableRes int res, View.OnClickListener mOnclickListener) {
-		return (ImageView) injectLeftView(injectLeftImg(res), mOnclickListener);
+		ImageView iv = new ImageView(mContext);
+		iv.setImageResource(res);
+		return (ImageView) injectLeftView(iv, mOnclickListener);
 	}
 	/**********************  Left  Img  end  **************************/
 
@@ -162,5 +180,29 @@ public class TitleView extends RelativeLayout {
 	 */
 	public void removeLeft() {
 		leftLayout.setVisibility(View.GONE);
+	}
+
+	/**
+	 * get title TextView
+	 * @return title TextView
+	 */
+	public TextView getTitleLayout() {
+		return titleTxt;
+	}
+
+	/**
+	 * get leftLayout (LinearLayout)
+	 * @return leftLayout (LinearLayout)
+	 */
+	public LinearLayout getLeftLayout() {
+		return leftLayout;
+	}
+
+	/**
+	 * get rightLayout (LinearLayout)
+	 * @return rightLayout (LinearLayout)
+	 */
+	public LinearLayout getRightLayout() {
+		return rightLayout;
 	}
 }
