@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Paint;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.util.AttributeSet;
 import android.widget.TextView;
@@ -23,6 +24,9 @@ public class TailsTextView extends TextView {
 	private int leftTextColor;
 	private int rightTextColor;
 
+	private float leftTextSize;
+	private float rightTextSize;
+
 	public TailsTextView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
@@ -35,6 +39,9 @@ public class TailsTextView extends TextView {
 
 			leftTextColor = a.getColor(R.styleable.TailsTextView_leftTextColor, getCurrentTextColor());
 			rightTextColor = a.getColor(R.styleable.TailsTextView_rightTextColor, getCurrentTextColor());
+
+			leftTextSize = a.getDimension(R.styleable.TailsTextView_leftTextSize, this.getTextSize());
+			rightTextSize = a.getDimension(R.styleable.TailsTextView_rightTextSize, this.getTextSize());
 		} finally {
 			a.recycle();
 		}
@@ -63,8 +70,15 @@ public class TailsTextView extends TextView {
 		super.setText(leftTxt + str + rightTxt);
 
 		SpannableString ss = new SpannableString(getText());
+
+		// text color
 		ss.setSpan(new ForegroundColorSpan(leftTextColor), 0, leftTxt.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 		ss.setSpan(new ForegroundColorSpan(rightTextColor), this.length() - rightTxt.length(), this.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+		// text size
+		ss.setSpan(new AbsoluteSizeSpan((int) leftTextSize), 0, leftTxt.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+		ss.setSpan(new AbsoluteSizeSpan((int) rightTextSize), this.length() - rightTxt.length(), this.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
 		this.setSpannableString(ss);
 	}
 

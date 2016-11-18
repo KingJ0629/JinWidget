@@ -42,4 +42,19 @@
         TailsTextView:line_through="true"
         TailsTextView:rightTextColor="@color/green"
         TailsTextView:rightTextTails="后缀"/>
+
+    <com.hangzhou.jin.customview.TailsTextView
+        android:id="@+id/mTailsTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_back"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="mTailsTextLayout"
+        TailsTextView:leftTextColor="@color/red"
+        TailsTextView:leftTextSize="20sp"
+        TailsTextView:leftTextTails="大字体"
+        TailsTextView:rightTextColor="@color/green"
+        TailsTextView:rightTextTails="小字体"/>
 </LinearLayout>
