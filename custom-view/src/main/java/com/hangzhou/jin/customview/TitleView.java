@@ -46,7 +46,7 @@ public class TitleView extends RelativeLayout {
 		try {
 			boolean leftLayoutVisible = a.getBoolean(R.styleable.TitleView_leftLayoutVisible, true);
 			defaultLeftIcon = a.getBoolean(R.styleable.TitleView_defaultLeftIcon, false);
-			String titleStr = a.getString(R.styleable.TitleView_title);
+			String titleStr = a.getString(R.styleable.TitleView_middleText);
 
 			leftLayout.setVisibility(leftLayoutVisible ? View.VISIBLE : View.GONE);
 			if (defaultLeftIcon) {

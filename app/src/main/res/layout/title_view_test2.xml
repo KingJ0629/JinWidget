@@ -4,12 +4,12 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.hangzhou.jin.customview.TitleView
-        xmlns:TitleView="http://schemas.android.com/apk/res-auto"
-        android:id="@id/title_view"
+    <TextView
+        android:id="@+id/parent_back"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        TitleView:defaultLeftIcon="true"
-        TitleView:middleText="Normal Title"/>
+        android:layout_height="50dp"
+        android:background="#33ff00"
+        android:gravity="center"
+        android:text="parent_back"/>
 
 </LinearLayout>

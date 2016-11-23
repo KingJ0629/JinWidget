@@ -31,4 +31,13 @@
         android:background="@color/grey_back"
         android:gravity="center"
         android:text="mTitleViewTestNormalActivity"/>
+
+    <TextView
+        android:id="@+id/mTitleViewTestAttachActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_back"
+        android:gravity="center"
+        android:text="mTitleViewTestAttachActivity"/>
 </LinearLayout>

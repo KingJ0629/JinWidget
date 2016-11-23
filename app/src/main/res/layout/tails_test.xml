@@ -56,5 +56,6 @@
         TailsTextView:leftTextSize="20sp"
         TailsTextView:leftTextTails="大字体"
         TailsTextView:rightTextColor="@color/green"
+        TailsTextView:rightTextSize="10sp"
         TailsTextView:rightTextTails="小字体"/>
 </LinearLayout>

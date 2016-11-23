@@ -13,7 +13,7 @@ public class TitleMainActivity extends AppCompatActivity {
 
 	private Activity mActivity;
 
-	private TextView mTitleView1, mTitleView2, mTitleViewTestNormalActivity;
+	private TextView mTitleView1, mTitleView2, mTitleViewTestNormalActivity, mTitleViewTestAttachActivity;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,14 @@ public class TitleMainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View view) {
 				startActivity(new Intent(mActivity, TitleViewTestNormalActivity.class));
+			}
+		});
+
+		mTitleViewTestAttachActivity = (TextView) findViewById(R.id.mTitleViewTestAttachActivity);
+		mTitleViewTestAttachActivity.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(mActivity, TitleViewTestAttachActivity.class));
 			}
 		});
 	}

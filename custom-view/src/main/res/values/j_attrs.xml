@@ -29,7 +29,7 @@
 
     <declare-styleable name="TitleView">
         <attr name="leftLayoutVisible" format="boolean"/>
-        <attr name="title" format="string"/>
+        <attr name="middleText" format="string"/>
         <attr name="defaultLeftIcon" format="boolean"/>
     </declare-styleable>
 

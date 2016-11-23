@@ -3,7 +3,10 @@ package com.hangzhou.jin.customview;
 import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.DrawableRes;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 /**
  * Created by Jin on 2016/11/6.
@@ -224,5 +227,22 @@ public class Title {
 		title.setTitle(titleStr);
 		title.injectRightView(view, mOnClickListener2);
 		title.invalidate();
+	}
+
+	/**
+	 * this func maybe has hidden dangers
+	 * @param activity Activity root
+	 */
+	@Deprecated
+	public static void attachToActivity(Activity activity) {
+
+		LinearLayout view = (LinearLayout) LayoutInflater.from(activity).inflate(R.layout.title_view_attach, null);
+
+		ViewGroup decor = (ViewGroup) activity.getWindow().getDecorView();
+		ViewGroup decorChild = (ViewGroup) decor.getChildAt(0);
+//		decor.removeView(decorChild);
+//		view.addView(decorChild);
+//		decor.addView(view);
+		decorChild.addView(view, 0);
 	}
 }
