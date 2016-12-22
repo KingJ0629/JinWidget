@@ -21,6 +21,7 @@ import android.widget.TextView;
  */
 public class TitleView extends RelativeLayout {
 
+
 	private final static String TAG = "TitleView";
 
 	private Context mContext;

@@ -2,17 +2,17 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'custom-view'
+    bintrayName = 'test-view'
 
     publishedGroupId = 'com.hangzhou.jin'
-    libraryName = 'JinWidget'
-    artifact = 'custom-view'
+    libraryName = 'TestWidght'
+    artifact = 'test-view'
 
-    siteUrl = 'https://github.com/kj387948407/JinWidget'
-    gitUrl = 'https://github.com/kj387948407/JinWidget.git'
+    siteUrl = 'https://github.com/kj387948407/TestWidght'
+    gitUrl = 'https://github.com/kj387948407/TestWidght.git'
 
-    libraryVersion = '1.4.2'
-    libraryDescription = 'Title title change to middleTitle'
+    libraryVersion = '1.0.1'
+    libraryDescription = 'Test GO22'
 
     developerId = 'jin'
     developerName = 'Jin Feng'
