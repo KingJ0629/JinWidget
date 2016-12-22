@@ -8,8 +8,8 @@ ext {
     libraryName = 'TestWidght'
     artifact = 'test-view'
 
-    siteUrl = 'https://github.com/kj387948407/TestWidght'
-    gitUrl = 'https://github.com/kj387948407/TestWidght.git'
+    siteUrl = 'https://github.com/kj387948407/JinWidget'
+    gitUrl = 'https://github.com/kj387948407/JinWidget.git'
 
     libraryVersion = '1.0.1'
     libraryDescription = 'Test GO22'

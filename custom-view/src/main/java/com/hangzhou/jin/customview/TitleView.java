@@ -143,7 +143,13 @@ public class TitleView extends RelativeLayout {
 	}
 
 	public TextView injectLeftTxt(String leftTxt, @DimenRes int sizeRes, @ColorRes int colorRes, View.OnClickListener mOnclickListener) {
-		return (TextView) injectLeftView(injectLeftTxt(leftTxt, sizeRes, colorRes), mOnclickListener);
+		TextView tv = new TextView(mContext);
+		tv.setText(leftTxt);
+		int size = getResources().getDimensionPixelSize(sizeRes);
+		tv.setTextSize(TypedValue.COMPLEX_UNIT_PX, size);
+		tv.setTextColor(mContext.getResources().getColor(colorRes));
+
+		return (TextView) injectLeftView(tv, mOnclickListener);
 	}
 	/**********************  Left  Text  end  **************************/
 
