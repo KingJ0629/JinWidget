@@ -11,8 +11,8 @@ ext {
     siteUrl = 'https://github.com/kj387948407/JinWidget'
     gitUrl = 'https://github.com/kj387948407/JinWidget.git'
 
-    libraryVersion = '1.4.3'
-    libraryDescription = 'Title title change to middleTitle && fix TitleView left text'
+    libraryVersion = '1.4.4'
+    libraryDescription = 'Title View && fix SuperText bug'
 
     developerId = 'jin'
     developerName = 'Jin Feng'

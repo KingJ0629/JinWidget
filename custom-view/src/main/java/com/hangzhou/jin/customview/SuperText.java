@@ -19,6 +19,8 @@ import android.widget.TextView;
  */
 public class SuperText extends TextView {
 
+	private final static int defaultLines = 9876;
+
 	public SuperText(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
@@ -38,7 +40,7 @@ public class SuperText extends TextView {
 			float SH = a.getDimension(R.styleable.SuperText_SH, getResources().getDimensionPixelSize(R.dimen.super_text_SH));
 
 			int C0 = a.getColor(R.styleable.SuperText_C0, ContextCompat.getColor(context, R.color.super_text_c0));
-			int L0 = a.getInt(R.styleable.SuperText_L0, Integer.MAX_VALUE);
+			int L0 = a.getInt(R.styleable.SuperText_L0, defaultLines);
 
 			// lines
 			this.setEllipsize(TextUtils.TruncateAt.END);
@@ -50,8 +52,10 @@ public class SuperText extends TextView {
 					this.setLines(2);
 					break;
 				case 9:
+					if (L0 != defaultLines)
+						this.setLines(L0);
+					break;
 				default:
-					this.setLines(L0);
 					break;
 			}
 

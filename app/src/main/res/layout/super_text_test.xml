@@ -8,10 +8,29 @@
 
     <com.hangzhou.jin.customview.SuperText
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@color/grey_back"
         android:gravity="center"
         android:text="mSuperText"
+        SuperText:textAttr="C3|SH|L2"/>
+
+    <com.hangzhou.jin.customview.SuperText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_back"
+        android:gravity="center"
+        android:text="mSuperText"
+        SuperText:textAttr="C3|SH|L0"/>
+
+    <com.hangzhou.jin.customview.SuperText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_back"
+        android:gravity="center"
+        android:text="mSuperText"
+        SuperText:L0="6"
         SuperText:textAttr="C3|SH|L0"/>
 </LinearLayout>
