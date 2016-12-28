@@ -95,4 +95,11 @@ public class TailsTextView extends TextView {
 		this.rightTxt = str;
 		setText(innerTxt);
 	}
+
+	public void setWholeTextColor(int color) {
+		leftTextColor = color;
+		rightTextColor = color;
+		setText(innerTxt);
+		this.setTextColor(color);
+	}
 }
