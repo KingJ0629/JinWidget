@@ -20,6 +20,7 @@ public class JRecyclerView extends FrameLayout {
 	private RecyclerView mRecyclerView;
 	private SwipeRefreshLayout mSwipeRefreshLayout;
 	private LoadView mLoadView;
+	private FrameLayout mFrameLayout;
 
 	private Context context;
 
@@ -33,6 +34,7 @@ public class JRecyclerView extends FrameLayout {
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(context));
 		mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeLayout);
 		mLoadView = (LoadView) view.findViewById(R.id.loadView);
+		mFrameLayout = (FrameLayout) view.findViewById(R.id.j_parent_layout);
 
 		this.addView(view);
 	}
@@ -47,6 +49,10 @@ public class JRecyclerView extends FrameLayout {
 
 	public LoadView getLoadView() {
 		return mLoadView;
+	}
+
+	public FrameLayout getParentView() {
+		return mFrameLayout;
 	}
 
 	/**------------------------------- recycler view ----------------------------------**/
