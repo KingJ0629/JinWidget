@@ -1,4 +1,4 @@
-package com.widget;
+package com.widget.demo;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.widget.title.TitleMainActivity;
+import com.widget.R;
+import com.widget.demo.title.TitleMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 

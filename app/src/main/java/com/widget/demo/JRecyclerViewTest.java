@@ -1,4 +1,4 @@
-package com.widget;
+package com.widget.demo;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.hangzhou.jin.customview.JRecyclerView;
+import com.widget.R;
 
 import java.util.ArrayList;
 import java.util.List;

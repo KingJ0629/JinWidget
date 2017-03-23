@@ -1,4 +1,4 @@
-package com.widget;
+package com.widget.demo;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -6,6 +6,7 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 
 import com.hangzhou.jin.customview.LoadView;
+import com.widget.R;
 
 /**
  * Created by Jin on 2016/8/17.

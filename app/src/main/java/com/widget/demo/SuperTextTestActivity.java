@@ -1,7 +1,9 @@
-package com.widget;
+package com.widget.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.widget.R;
 
 /**
  * Created by Jin on 2016/9/24.

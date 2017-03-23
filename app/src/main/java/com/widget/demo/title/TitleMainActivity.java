@@ -1,4 +1,4 @@
-package com.widget.title;
+package com.widget.demo.title;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.widget.MainActivity">
+        <activity android:name="com.widget.ali.AliMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -16,17 +16,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MinePersonalSettingsActivity"/>
-        <activity android:name=".TestTailsTextLayoutActivity"/>
-        <activity android:name=".TestLoadView"/>
-        <activity android:name=".JRecyclerViewTest"/>
-        <activity android:name=".SuperTextTestActivity"/>
+        <activity android:name=".demo.MinePersonalSettingsActivity"/>
+        <activity android:name=".demo.TestTailsTextLayoutActivity"/>
+        <activity android:name=".demo.TestLoadView"/>
+        <activity android:name=".demo.JRecyclerViewTest"/>
+        <activity android:name=".demo.SuperTextTestActivity"/>
 
-        <activity android:name=".title.TitleMainActivity"/>
-        <activity android:name=".title.TitleViewTest1Activity"/>
-        <activity android:name=".title.TitleViewTest2Activity"/>
-        <activity android:name=".title.TitleViewTestNormalActivity"/>
-        <activity android:name=".title.TitleViewTestAttachActivity" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".demo.title.TitleMainActivity"/>
+        <activity android:name=".demo.title.TitleViewTest1Activity"/>
+        <activity android:name=".demo.title.TitleViewTest2Activity"/>
+        <activity android:name=".demo.title.TitleViewTestNormalActivity"/>
+        <activity android:name=".demo.title.TitleViewTestAttachActivity" android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

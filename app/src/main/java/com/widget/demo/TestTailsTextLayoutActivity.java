@@ -1,4 +1,4 @@
-package com.widget;
+package com.widget.demo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.hangzhou.jin.customview.TailsTextView;
+import com.widget.R;
 
 public class TestTailsTextLayoutActivity extends AppCompatActivity {
 
