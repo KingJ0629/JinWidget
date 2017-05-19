@@ -27,6 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 TextMoreLayout:tmLeftText="性别"
+                TextMoreLayout:tmRightHint="nana"
                 TextMoreLayout:tmLeftTextColor="#333333"
                 TextMoreLayout:tmRightTextColor="#333333"
                 TextMoreLayout:tmRightTextSize="15sp"/>

@@ -23,7 +23,6 @@ public class MinePersonalSettingsActivity extends AppCompatActivity {
 		nickname.setLeftText("昵称");
 
 		TextMoreLayout sex = (TextMoreLayout) findViewById(R.id.sex);
-		sex.setRightText("男");
 
 		TextMoreLayout birthDay = (TextMoreLayout) findViewById(R.id.birthDay);
 		birthDay.setRightText("2016-07-26");

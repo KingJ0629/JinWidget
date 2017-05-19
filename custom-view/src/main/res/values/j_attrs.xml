@@ -16,10 +16,13 @@
         <attr name="tmLeftTextColor" format="color"/>
         <attr name="tmLeftTextSize" format="dimension"/>
         <attr name="tmRightText" format="string"/>
+        <attr name="tmRightHint" format="string"/>
         <attr name="tmRightTextColor" format="color"/>
+        <attr name="tmRightHintColor" format="color"/>
         <attr name="tmRightTextSize" format="dimension"/>
         <attr name="tmRightImgVisible" format="boolean"/>
         <attr name="tmBottomLineVisible" format="boolean"/>
+        <attr name="tmBackground" format="reference"/>
     </declare-styleable>
 
     <declare-styleable name="LoadView">
