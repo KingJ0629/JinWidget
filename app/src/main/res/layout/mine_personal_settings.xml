@@ -27,10 +27,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 TextMoreLayout:tmLeftText="性别"
-                TextMoreLayout:tmRightHint="nana"
+                TextMoreLayout:tmRightHint="请输入"
+                TextMoreLayout:tmRightText="男"
                 TextMoreLayout:tmLeftTextColor="#333333"
                 TextMoreLayout:tmRightTextColor="#333333"
-                TextMoreLayout:tmRightTextSize="15sp"/>
+                TextMoreLayout:tmRightTextSize="12sp"/>
 
             <com.hangzhou.jin.customview.TextMoreLayout
                 android:id="@+id/birthDay"

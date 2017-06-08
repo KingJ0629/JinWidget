@@ -11,8 +11,8 @@ ext {
     siteUrl = 'https://github.com/kj387948407/JinWidget'
     gitUrl = 'https://github.com/kj387948407/JinWidget.git'
 
-    libraryVersion = '1.4.10'
-    libraryDescription = 'Title View && fix JRecyclerView && add TextMoreLayout parent layout'
+    libraryVersion = '1.4.11'
+    libraryDescription = 'Title View && fix JRecyclerView && add TextMoreLayout bugs'
 
     developerId = 'jin'
     developerName = 'Jin Feng'
@@ -25,7 +25,7 @@ ext {
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 16
