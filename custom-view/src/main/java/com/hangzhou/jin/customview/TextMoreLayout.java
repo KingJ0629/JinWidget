@@ -6,6 +6,7 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -54,6 +55,7 @@ public class TextMoreLayout extends RelativeLayout {
 				leftText.setText(leftTxt);
 
 			rightText = (TextView) view.findViewById(R.id.rightText);
+			rightText.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
 			rightText.setTextColor(rightTextColor);
 			rightText.setHintTextColor(rightHintColor);
 			rightText.setTextSize(TypedValue.COMPLEX_UNIT_PX, rightTextSize);
